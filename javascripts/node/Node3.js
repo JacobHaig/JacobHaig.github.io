@@ -81,7 +81,9 @@ jQuery(window).load(function() {
 			});
 			if (pixelRatio$1 !== 1) {
 				// if retina screen, scale canvas
-				this.canvas.style.transform = 'scale(' + 1 / pixelRatio$1 + ')';
+				
+				//this.canvas.style.transform = 'scale(' + 1 / pixelRatio$1 + ')';
+				this.canvas.style.transform = 'scale(' + 1  + ')';
 				this.canvas.style.transformOrigin = '0 0';
 			}
 			this.canvas.id = 'nodegarden';
