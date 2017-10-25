@@ -19,13 +19,19 @@ function setup() {
 }
 
 function startNode() {
-    var Object = new createObject(random(0, w), random(0, h), random(2,10)); //var Object = new createObject(random(0, w), random(0, h));
+    var Object = new createObject(random(0, w), random(0, h), random(1,10)); //var Object = new createObject(random(0, w), random(0, h));
     nodes.push(Object);
 }
 
 function newNode() {
     var Object = new createObject(random(0, w), h, random(2,10)); //var Object = new createObject(random(0, w), random(0, h));
     nodes.push(Object);
+}
+
+function windowResized() {
+	w = windowWidth;
+    h = windowHeight;
+	resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
@@ -38,7 +44,7 @@ function draw() {
 
 function drawNodes(item, index) {
     noStroke();
-    fill(255 - item.mass * 15);
+    fill(255 - item.mass * 10);
     ellipse(nodes[index].x, nodes[index].y, nodes[index].mass/2, nodes[index].mass/2);
 }
 
