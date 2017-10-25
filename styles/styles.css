@@ -1,35 +1,47 @@
-body {
-	text-align: center;
-	padding: auto;
-	font-size: 35;
-	background-color: #1a1a1a;
-	width: auto;
-	height: auto;
+html, body {
+	font-size:30px;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	
+	background: linear-gradient(307deg, #ee4111, #0f0f0f, #1a3a7a);
+	background-size: 800% 800%;
+	animation: sunset 50s ease infinite;
+}
+@keyframes sunset {
+    0%{background-position:99% 0%}
+    50%{background-position:2% 100%}
+    100%{background-position:99% 0%}
 }
 
-#container {
+canvas {
+	vertical-align: top;
+	height:100%;
+	width:100%;
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 1;
+	position: absolute;
 }
 
-#nodegarden {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
 
 #wrapper {
-	width: 55%;
+	width: 65%;
 	height: auto;
-	background-color: #d3d3d3;
-	margin-top: 5%;
-	margin-bottom: 10%;
+	margin-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
-	border-style: solid;
-	border-width: 2px;
-	border-color: gray;
+		
 	text-align: center;
-	opacity: .8;
+	color: #DFDFDF;
+	font-family: 'Open Sans',Arial,Helvetica Neue,sans-serif;
+	width: 100%;
+	font-size: 20px;
+	text-transform: uppercase;
+	line-height: 0.8;
+	letter-spacing: 3px;
+	font-weight: 300;
 }
