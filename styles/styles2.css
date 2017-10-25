@@ -36,13 +36,16 @@ html, body {
 	width:100%;
 	position: absolute;
 	top: 0;
-	left: 0;transform: scale(1.25);
+	left: 0;
 }
 
-#container {
-	z-index: 1;
+#defaultCanvas0 {
 	height:100%;
 	width:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
 	position: absolute;
 }
 
