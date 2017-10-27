@@ -1,0 +1,13 @@
+random($min, $max){
+	return floor(math(0, 'random') * $max - $min + 1 + $min);
+}
+
+add(a, b) {
+  a + b
+}
+
+body{
+  for num in 1..30{
+    width random(0,100)
+  }
+}
