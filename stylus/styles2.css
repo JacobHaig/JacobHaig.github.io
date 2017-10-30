@@ -1,6 +1,0 @@
-random($min, $max)
-  return floor(math(0, "random") * ($max - $min + 1) + $min)
-
-body {
-  width: random(50, 500)
-}
