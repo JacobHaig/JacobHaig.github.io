@@ -11,13 +11,13 @@ function createObject(x, y, mass) {
 }
 
 function setup() {
-  w = windowWidth*.5;
-  h = windowHeight-50;
+  w = windowWidth - 50;
+  h = windowHeight - 50;
   createCanvas(w, h);
 
   noStroke();
   for (var i = 0; i < amount; i++)
-    startNode();
+  startNode();
 }
 
 function startNode() {
@@ -26,8 +26,8 @@ function startNode() {
 }
 
 function windowResized() {
-  w = windowWidth*.5;
-  h = windowHeight-50;
+  w = windowWidth - 50;
+  h = windowHeight - 50;
   resizeCanvas(w, h);
 }
 
@@ -44,8 +44,8 @@ function drawNodes(item, index) {
 }
 
 function moveUp(item, index) {
-	item.y -= item.mass/4;
-	if ( item.y < 0)  //if node goes too far out of range reset node
-    item.y += h;
+  item.y -= item.mass/4;
+  if ( item.y < 0)  //if node goes too far out of range reset node
+  item.y += h;
 
 }
