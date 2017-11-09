@@ -1,8 +1,7 @@
 // out: css/styles2.css
 
-random(min, max)
-  return floor(math(0, 'random') * max - min + 1 + min);
-
+bodyWidth = 65%
+colorWhite = #dfdfdf
 
 html, body
   font-size 30px
@@ -18,69 +17,6 @@ html, body
   background-size 3048 1714.5
   animation sunset 45s ease infinite
 
-multiple-box-shadow(n)
-  color = #FFF
-  value1 = random(0,2000)px
-  value2 = random(0,2000)px
-  value3 = value1 value2 color
-  for i in 2 .. n
-    value1 = random(0,2000)px
-    value2 = random(0,2000)px
-    value3 = value3, value1 value2 color
-  return value3
-
-shadows-small  = multiple-box-shadow(700)
-shadows-medium = multiple-box-shadow(200)
-shadows-big    = multiple-box-shadow(100)
-
-
-
-
-#stars
-  width: 1px
-  height: 1px
-  background: transparent
-  box-shadow: shadows-small
-  animation	: animStar 50s linear infinite
-  &:after
-    content: " "
-    position: absolute
-    top: 2000px
-    width: 1px
-    height: 1px
-    background: transparent
-    box-shadow: shadows-small
-
-#stars2
-  width: 2px
-  height: 2px
-  background: transparent
-  box-shadow: shadows-medium
-  animation	: animStar 100s linear infinite
-  &:after
-    content: " "
-    position: absolute
-    top: 2000px
-    width: 2px
-    height: 2px
-    background: transparent
-    box-shadow: shadows-medium
-
-#stars3
-  width: 3px
-  height: 3px
-  background: transparent
-  box-shadow: shadows-big
-  animation	: animStar 150s linear infinite
-  &:after
-    content: " "
-    position: absolute
-    top: 2000px
-    width: 3px
-    height: 3px
-    background: transparent
-    box-shadow: shadows-big
-
 canvas
   vertical-align top
   margin 0
@@ -92,15 +28,49 @@ canvas
   left 0
   z-index 1
 
+hr
+  width 100%
+
+
 nav
   font-size 18px
+  height auto
+  width 100%
+  color colorWhite
+  padding 10px
+  margin 10px
+  div
+    width 100%
+    text-align center
+  ul
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   li
+    display: inline
+    width: auto
+    float left
+    a
+     display: block;
+     padding: 8px;
+     background-color: #dddddd;
+     &:link
+      color colorWhite
+      background rgba(0,0,0,0)
+     &:visited
+      color colorWhite
+     &:active
+      color colorWhite
+     &:hover
+      color colorWhite
+
 
 #wrapper
-  width 65%
+  width bodyWidth
   height auto
   margin auto
   margin-top 10px
-  color #dfdfdf
+  color colorWhite
   font-family 'Open Sans', Arial, Helvetica Neue, sans-serif
   font-size 16px
   line-height 0.9
