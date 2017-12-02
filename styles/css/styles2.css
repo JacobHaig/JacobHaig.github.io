@@ -75,8 +75,8 @@ nav ul li a:hover {
   color: #dfdfdf;
   font-family: 'Open Sans', Arial, Helvetica Neue, sans-serif;
   font-size: 16px;
-  line-height: 0.9;
-  letter-spacing: 3px;
+  line-height: 1;
+  letter-spacing: 1px;
 }
 @-moz-keyframes animStar {
   from {
