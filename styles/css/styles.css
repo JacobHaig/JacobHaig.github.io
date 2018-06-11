@@ -9,7 +9,7 @@ body {
   height: auto;
   min-height: 100%;
   background: url("../../assets/background.svg");
-  background-size: 3048 1714.5;
+  background-size: 762 428.625;
   animation: sunset 45s ease infinite;
 }
 html ::-webkit-scrollbar,
@@ -126,45 +126,33 @@ nav ul li a:hover {
 }
 @-moz-keyframes sunset {
   0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
+    transform: rotate(0deg);
   }
   100% {
-    background-position: 0% 50%;
+    transform: rotate(360deg);
   }
 }
 @-webkit-keyframes sunset {
   0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
+    transform: rotate(0deg);
   }
   100% {
-    background-position: 0% 50%;
+    transform: rotate(360deg);
   }
 }
 @-o-keyframes sunset {
   0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
+    transform: rotate(0deg);
   }
   100% {
-    background-position: 0% 50%;
+    transform: rotate(360deg);
   }
 }
 @keyframes sunset {
   0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
+    transform: rotate(0deg);
   }
   100% {
-    background-position: 0% 50%;
+    transform: rotate(360deg);
   }
 }

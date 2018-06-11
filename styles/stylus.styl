@@ -1,4 +1,4 @@
-// out: css/styles.css
+//out: css/styles.css
 
 bodyWidth = 65%
 colorWhite = #dfdfdf
@@ -8,14 +8,12 @@ html, body
   position absolute
   margin 0
   padding 0
-  //text-align center
   text-transform uppercase
   width 100%
   height auto
   min-height 100%
-  //overflow: hidden
   background: url('../../assets/background.svg');
-  background-size 3048 1714.5
+  background-size (3048/4) (1714.5/4)
   animation sunset 45s ease infinite
 
   ::-webkit-scrollbar {
@@ -43,7 +41,6 @@ canvas
   top 0
   left 0
   z-index 1
-
 
 
 hr
@@ -105,8 +102,6 @@ nav
 
 @keyframes sunset
   0%
-    background-position: 0% 50%
-  50%
-    background-position: 100% 50%
+    transform: rotate(  0 deg )
   100%
-    background-position: 0% 50%
+    transform: rotate(  360 deg )
