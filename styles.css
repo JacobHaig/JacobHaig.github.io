@@ -1,16 +1,30 @@
+* {
+    user-select: none;
+    pointer-events: none;
+}
 html,
 body {
     padding: 0px;
     margin: 0px;
+    overflow: hidden;
+}
+
+
+body {
+    margin: 0;
+    background-color: rgb(7, 24, 27);
+    width: 100%;
+    height: 100%;
 }
 
 .wrapper {
     height: 100%;
-    z-index: -11;
-    
+    z-index: 1;
+
     width: 100%;
     display: grid;
-    grid-template-areas: 'header' 'body' 'footer';
+    grid-template-rows: 90px 1fr ;
+    pointer-events: none;
 }
 
 .header {
@@ -18,9 +32,10 @@ body {
     grid-template-columns: 1fr 100px 100px 100px;
     background-color: rgb(7, 24, 27);
     
+
 }
 
-.title{
+.title {
     /*
     font-family: 'Forum', cursive;
     font-family: 'Lobster', cursive;
@@ -34,7 +49,7 @@ body {
     letter-spacing: 2px;
     font-weight: 100;
 
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 
 
     font-size: 3em;
@@ -42,15 +57,16 @@ body {
     padding-left: 1em;
 }
 
-
-.body{
-
+a {
+    pointer-events: all;
 }
 
 .content {
     background-color: rgba(10, 10, 10, .5);
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgba(200, 200, 200, .7);
+    
 }
 
 .footer {
@@ -59,62 +75,50 @@ body {
 
 
 .bold {
-  font-weight: 900;
-  font-style:bold;
+    font-weight: 900;
+    font-style: bold;
 }
 
-* {
-    user-select: none;
-}
 
-html, body {
-    overflow: hidden;
-}
 
-body {
-    margin: 0;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-}
-
-canvas {
+.canvas {
+    position: absolute;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
     z-index: -1;
-}
+    pointer-events: all;
 
+}*/
+/*
 .dg {
     opacity: 0.9;
-    z-index: -1;
-}
-
+    
+}*/
+/*
 .dg .property-name {
     overflow: visible;
 
-    z-index: -1;
-}
-
+}*/
+/*
 .bigFont {
     font-size: 150%;
     color: #8C8C8C;
-}
-
+}*/
+/*
 .cr.function.appBigFont {
     font-size: 150%;
     line-height: 27px;
     background-color: #2F4F4F;
-}
-
+}*/
+/*
 .cr.function.appBigFont .property-name {
     float: none;
-}
-
+}*/
+/*
 .cr.function.appBigFont .icon {
     position: sticky;
     bottom: 27px;
-}
+}*/
